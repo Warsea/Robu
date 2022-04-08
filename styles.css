@@ -25,3 +25,42 @@ h1 {
     font-size: calc(1.525rem + 3.3vw);
   }
 }
+
+.title {
+  position: relative;
+  font-size: 30px;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+}
+.title:before,
+.title:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 50%;
+  height: 1px;
+  content: "\a0";
+  background-color: #bac0c9;
+}
+.title:before {
+  margin-left: -52%;
+  text-align: right;
+}
+.title:after {
+  margin-left: 2%;
+  text-align: right;
+}
+/* 
+.circular {
+  border: 1px solid;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+} */
+
+.image-fit {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
